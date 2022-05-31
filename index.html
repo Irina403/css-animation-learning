@@ -1,11 +1,33 @@
 <div class="animation">
     <div class="animation_block">
-
+        <div class="circle"></div>
     </div>
 </div>
 
 <style>
-    .animation_block{
-        
+    .animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
+    .animation_block{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 80px solid rgba(0, 0, 0, 0.5);
+    }
+    .circle{
+        top:-45px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    
 </style>
